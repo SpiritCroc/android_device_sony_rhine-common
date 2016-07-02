@@ -86,6 +86,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
+# IDC
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc \
+    $(COMMON_PATH)/rootdir/system/usr/idc/max1187x_touchscreen_0.idc:system/usr/idc/max1187x_touchscreen_0.idc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
@@ -203,6 +208,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HWUI memory limits
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
-
-# Include non-opensource parts
-$(call inherit-product, vendor/sony/rhine-common/rhine-common-vendor.mk)
