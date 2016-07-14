@@ -90,6 +90,8 @@
 /dev/ttyHSL1              0660   system     system
 /dev/radio0               0640   system     system
 /dev/rfkill               0660   wifi       wifi
+/dev/video32              0660   system     camera
+/dev/video33              0660   system     camera
 /sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
 
 # permissions for audio
