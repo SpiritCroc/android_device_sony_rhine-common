@@ -74,4 +74,4 @@ TARGET_SYSTEM_PROP += device/sony/rhine-common/system.prop
 # SELinux
 BOARD_SEPOLICY_DIRS += device/sony/rhine-common/sepolicy
 
-include device/sony/common/CommonConfigOmni.mk
+include device/sony/common/CommonConfigDU.mk
