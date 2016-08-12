@@ -51,11 +51,13 @@
 /dev/msm_ac3              0660   system     audio
 /dev/msm_acdb             0660   system     audio
 /dev/msm_audio_cal        0660   system     audio
+/dev/msm_alac             0660   system     audio
 /dev/msm_hweffects        0660   system     audio
 /dev/msm_amrnb            0660   system     audio
 /dev/msm_amrnb_in         0640   system     audio
 /dev/msm_amrwb            0660   system     audio
 /dev/msm_amrwbplus        0660   system     audio
+/dev/msm_ape              0660   system     audio
 /dev/msm_cad              0660   system     audio
 /dev/msm_camera/*         0660   system     camera
 /dev/msm_evrc             0660   system     audio
@@ -85,6 +87,12 @@
 /dev/video33              0660   system     camera
 /sys/devices/virtual/smdpkt/smdcntl* open_timeout 0664 radio  radio
 
+# UIO devices
+/dev/uio0                 0660   system     system
+/dev/uio1                 0660   system     system
+/dev/uio2                 0660   system     system
+/dev/uio3                 0660   system     system
+
 # BT
 /dev/hidraw*                                0666 system    system
 /dev/rfkill                                 0660 bluetooth net_bt_stack
@@ -95,9 +103,7 @@
 /dev/wcnss_ctrl           0660   system     system
 
 # NFC
-/dev/nfc-nci              0660   nfc        nfc
 /dev/pn544                0660   nfc        nfc
-/dev/pn547                0660   nfc        nfc
 
 # LED
 /sys/devices/01-qcom,leds-d000/leds/led:* max_brightness          0664 system system
@@ -108,9 +114,7 @@
 /sys/devices/01-qcom,leds-d800/leds/wled:backlight max_brightness 0664 system system
 /sys/devices/01-qcom,leds-d800/leds/wled:backlight brightness     0664 system system
 
-# IR Remote
-/dev/ttyHSL2 0660 system system /sys/devices/platform/ir_remote_control enable 0220 system system
-
+# Graphics Permissions
 /sys/devices/virtual/graphics/fb1/avi_itc             0664 system graphics
 /sys/devices/virtual/graphics/fb1/avi_cn0_1           0664 system graphics
 /sys/devices/virtual/graphics/fb1/hpd                 0664 system graphics
