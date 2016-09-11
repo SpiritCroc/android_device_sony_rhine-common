@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
+# Snap Cmaera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Platform Init
 PRODUCT_PACKAGES += \
     fstab.rhine \
