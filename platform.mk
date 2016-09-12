@@ -77,8 +77,8 @@ PRODUCT_PACKAGES += \
     gps.msm8974
 
 # CAMERA
-PRODUCT_PACKAGES += \
-    camera.msm8974
+#PRODUCT_PACKAGES += \
+#    camera.msm8974
 
 # Keymaster
 PRODUCT_PACKAGES += \
