@@ -14,3 +14,7 @@
 
 # Inherit AICP Sony common device parts
 $(call inherit-product, device/sony/common/aicp.mk)
+
+# QCOM display HAL
+SONY_AOSP_DISPLAY := true
+$(call project-set-path,qcom-display,hardware/sony/display)
