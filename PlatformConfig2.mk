@@ -29,5 +29,9 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 SONY_AOSP_DISPLAY := true
 $(call project-set-path,qcom-display,hardware/sony/display/msm8994)
 
+
 # RIL class override
 BOARD_RIL_CLASS := ../../../$(PLATFORM_COMMON_PATH)/ril/
+
+# Inherit TWRP Config
+include device/sony/rhine-common/twrp.mk
