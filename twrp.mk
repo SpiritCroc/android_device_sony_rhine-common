@@ -12,3 +12,6 @@ TW_NO_USB_STORAGE := true
 # Recovery
 PRODUCT_COPY_FILES += \
 device/sony/rhine-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# TWRP device version
+TW_DEVICE_VERSION=Elefant
