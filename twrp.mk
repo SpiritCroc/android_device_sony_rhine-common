@@ -3,6 +3,9 @@
 # Make sure that files are present at their respective folders
 #
 
+# TWRP sony common
+include device/sony/common/twrp.mk
+
 # TWRP flags
 TW_THEME := portrait_hdpi
 TW_HAS_NO_RECOVERY_PARTITION := true
