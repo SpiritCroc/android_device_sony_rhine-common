@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     e2fsck
 
 PRODUCT_PACKAGES += \
+	android.hardware.broadcastradio@1.0-impl \
     qcom.fmradio \
     libqcomfm_jni \
     FM2 \
