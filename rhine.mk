@@ -102,6 +102,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+	android.hardware.nfc@1.0-impl \
     nfc.qcom
 
 PRODUCT_PACKAGES += \
