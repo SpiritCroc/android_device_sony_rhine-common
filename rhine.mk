@@ -129,6 +129,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 # WiFi
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
