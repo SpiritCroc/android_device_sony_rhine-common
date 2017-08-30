@@ -24,7 +24,6 @@ on init
 on early-fs
     wait /dev/block/mmcblk0p1
     class_start trimarea
-    exec u:r:qti_init_shell:s0 -- /sbin/wait4tad_static
 
 on fs
     # mount apps_log
@@ -179,7 +178,7 @@ service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
     group tad trimarea root
     socket tad stream 0770 system trimarea
 # tad_static is in rootfs, normal file_context does not work
-    seclabel u:r:tad:s0
+
 service updatemiscta /system/bin/updatemiscta
     class main
     user updatemiscta
