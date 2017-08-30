@@ -105,6 +105,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     macaddrsetup
 
+# Memtrack
+PRODUCT_PACKAGES += \
+	android.hardware.memtrack@1.0-impl
+
 # NFC
 PRODUCT_PACKAGES += \
 	android.hardware.nfc@1.0-impl \
