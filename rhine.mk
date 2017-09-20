@@ -74,6 +74,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libshim_cald \
+    libshim_camera \
     libstlport
 
 # Cpnnectivity
