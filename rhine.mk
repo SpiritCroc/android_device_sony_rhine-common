@@ -116,6 +116,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.memtrack@1.0-impl
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # NFC
 PRODUCT_PACKAGES += \
 	android.hardware.nfc@1.0-impl \
