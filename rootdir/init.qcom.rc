@@ -123,11 +123,6 @@ service ims_regmanager /system/bin/exe-ims-regmanagerprocessnative
     group bluetooth inet radio wifi
     disabled
 
-service time_daemon /system/bin/time_daemon
-    class late_start
-    user root
-    group root
-
 # FM Radio
 on property:hw.fm.init=0
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
